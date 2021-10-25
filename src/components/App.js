@@ -1,17 +1,14 @@
 import React, { Component } from "react";
+import Header from "./Bootstrap/Header";
 
 class App extends Component {
-  state = {
-    Who: "CESA VIT"
-  };
+  state = {};
   render() {
     return (
       <div className="App">
-        <h1>{this.state.Who}</h1>
-        <p>
-          Hey folks, this webinar is brought to you by {this.state.Who}. Thanks
-          a lot.
-        </p>
+        <Header dark={true} className="justify-content-center">
+          CESA VIT
+        </Header>
       </div>
     );
   }
